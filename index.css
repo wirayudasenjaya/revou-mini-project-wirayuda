@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -25,6 +29,7 @@ input {
 }
 
 .add-button {
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
