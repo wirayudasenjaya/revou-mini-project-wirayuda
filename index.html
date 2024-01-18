@@ -18,12 +18,12 @@
           <input type="number" id="jumlah" name="jumlah" />
         </div>
         
-        <button type="submit" class="add-button">Tambah Barang</button>
+        <button type="button" class="add-button" onclick="addItem()">Tambah Barang</button>
       </form>
 
       <br>
 
-      <table>
+      <table id="table-list">
         <tr>
           <th>Nama Barang</th>
           <th>Jumlah Barang</th>
@@ -34,5 +34,7 @@
         </tr>
       </table>
     </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
