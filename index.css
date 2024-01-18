@@ -107,6 +107,8 @@ input {
 @media screen and (max-width: 768px) {
   .navbar {
     grid-template-columns: repeat(1, minmax(10px, 1fr));
+    background-image: url(./assets/image2.png);
+    height: 8rem;
   }
 
   label {
@@ -116,6 +118,7 @@ input {
 
   input {
     margin: 0;
+    width :50%;
   }
 
   .form {
