@@ -13,3 +13,6 @@ function addItem(e) {
     nameCell.append(nameText);
     amountCell.append(amountText);
 }
+
+const form = document.getElementById("form");
+form.addEventListener("submit", addItem);

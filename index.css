@@ -18,13 +18,16 @@ h1 {
 
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 td,
 th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 20px;
+  border-left: 0px solid;
+  border-right: 0px solid;
 }
 
 label {
@@ -59,13 +62,13 @@ input {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   display: grid;
-  grid-template-columns: repeat(6, minmax(10px, 1fr));;
+  grid-template-columns: repeat(6, minmax(10px, 1fr));
   place-content: center;
 }
 
 @media screen and (max-width: 1200px) {
   .navbar {
-    grid-template-columns: repeat(4, minmax(10px, 1fr));;
+    grid-template-columns: repeat(4, minmax(10px, 1fr));
   }
 
   .form {
@@ -78,7 +81,7 @@ input {
   h1 {
     font-size: 1.6em;
   }
-  
+
   .form {
     width: 75%;
     grid-template-columns: repeat(3, minmax(10px, 1fr));
@@ -86,10 +89,8 @@ input {
 }
 
 @media screen and (max-width: 768px) {
-
-
   .navbar {
-    grid-template-columns: repeat(1, minmax(10px, 1fr));;
+    grid-template-columns: repeat(1, minmax(10px, 1fr));
   }
 
   label {
