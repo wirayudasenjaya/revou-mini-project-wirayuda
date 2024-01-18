@@ -8,3 +8,62 @@ td, th {
   padding: 8px;
 }
 
+label {
+  display: inline-block;
+}
+
+input {
+  margin-right: 1rem;
+  padding: 0.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10px, 1fr));
+}
+
+.add-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #38bdf8;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .form {
+    width: 75%;
+    grid-template-columns: repeat(4, minmax(10px, 1fr));
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .form {
+    width: 75%;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  label {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+  
+  input {
+    margin: 0;
+  }
+
+  .form {
+    grid-template-columns: repeat(1, minmax(10px, 1fr));
+  }
+
+  .add-button {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: fit-content;
+  }
+}
