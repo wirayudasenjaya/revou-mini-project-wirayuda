@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
     <title>Shopping List</title>
   </head>
   <body>
-    <section>
-      <form class="form">
+    <nav>
+      <div class="navbar">
+        <h1>Shopping List</h1>
+      </div>
+    </nav>
+
+    <section class="main">
+      <form class="form" onsubmit="addItem(e)">
         <div>
           <label for="nama">Nama Barang</label>
           <input type="text" id="nama" name="nama" />
@@ -18,11 +27,13 @@
           <label for="jumlah">Jumlah Barang</label>
           <input type="number" id="jumlah" name="jumlah" />
         </div>
-        
-        <button type="button" class="add-button" onclick="addItem()">Tambah Barang</button>
+
+        <button type="submit" class="add-button">
+          Tambah Barang
+        </button>
       </form>
 
-      <br>
+      <br />
 
       <table id="table-list">
         <tr>

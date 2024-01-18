@@ -1,4 +1,5 @@
-function addItem() {
+function addItem(e) {
+    e.preventDefault();
     var nameValue = document.getElementById('nama').value;
     var amountValue = document.getElementById('jumlah').value;
     var table = document.getElementById('table-list');

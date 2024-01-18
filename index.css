@@ -1,12 +1,27 @@
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+}
+
+.main {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 2em;
+  color: #fbf9f1;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -29,15 +44,30 @@ input {
 }
 
 .add-button {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #38bdf8;
+  background-color: #aad7d9;
   color: #fff;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #92c7cf;
+  height: 6rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10px, 1fr));;
+  place-content: center;
 }
 
 @media screen and (max-width: 1200px) {
+  .navbar {
+    grid-template-columns: repeat(4, minmax(10px, 1fr));;
+  }
+
   .form {
     width: 75%;
     grid-template-columns: repeat(4, minmax(10px, 1fr));
@@ -45,6 +75,10 @@ input {
 }
 
 @media screen and (max-width: 960px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  
   .form {
     width: 75%;
     grid-template-columns: repeat(3, minmax(10px, 1fr));
@@ -52,11 +86,17 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+
+
+  .navbar {
+    grid-template-columns: repeat(1, minmax(10px, 1fr));;
+  }
+
   label {
     margin-top: 0.75rem;
     width: 100%;
   }
-  
+
   input {
     margin: 0;
   }
